@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <style>
+        /* Use a more specific class name */
+        .floating-whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; /* Added background-color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .floating-whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+            background-color: #1DA851;
+        }
+
+        /* More specific class for the icon */
+        .floating-whatsapp-button .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: white;
+        }
+
+        .floating-whatsapp-button .whatsapp-text {  /* More specific for the text */
+            font-weight: bold;
+        }
+    </style>
+<body>
+
+    <a class="floating-whatsapp-button" href="https://wa.me/+919301243543" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.27 25.86c-.29-.69-1.1-1.26-1.9-1.45-.8-.19-1.7-.3-2.5-.32-.81-.02-1.57.12-2.38.42-.81.3-.96.82-.96 1.62 0 .8.16 1.58.47 2.38.31.8.78 1.57 1.47 2.13.7.56 1.5.92 2.38 1.06.88.14 1.76.21 2.64.21.9 0 1.7-.14 2.5-.42.8-.28 1.4-.74 1.9-1.32.5-.58.89-1.28 1.17-2.06.27-.78.4-1.6.4-2.42 0-.82-.13-1.64-.4-2.46zM22.12 7.52c-3.18 0-6.16 1.27-8.48 3.6-2.32 2.32-3.59 5.3-3.59 8.48 0 1.52.3 2.98.8 4.35l-.38 1.38 1.45-.38c1.37.5 2.83.8 4.35.8 3.18 0 6.16-1.27 8.48-3.6 2.32-2.32 3.59-5.3 3.59-8.48 0-3.18-1.27-6.16-3.6-8.48-2.32-2.32-5.3-3.59-8.48-3.59z"></path>
+        </svg>
+        <span class="whatsapp-text">WhatsApp</span>
+    </a>
+
+</body>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Samadhan</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
+
+    <!-- libraries CSS -->
+    <link rel="stylesheet" href="assets/icon/flaticon_real_estate.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/splide/splide.min.css">
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/slim-select/slimselect.css">
+    <link rel="stylesheet" href="assets/vendor/animate-wow/animate.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- SIDEBAR SECTION START -->
+    <div class="ul-sidebar">
+        <!-- header -->
+        <div class="ul-sidebar-header">
+            <div class="ul-sidebar-header-logo">
+                <a href="index.html">
+                    <img src="assets/img/logo-dark.png" alt="logo" class="logo">
+                </a>
+            </div>
+            <!-- sidebar closer -->
+            <button class="ul-sidebar-closer"><i class="flaticon-close"></i></button>
+        </div>
+
+        <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
+
+        <p class="ul-sidebar-descr d-none d-lg-flex">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
+
+        <div class="ul-sidebar-slider-wrapper d-none d-lg-flex">
+            <div class="ul-sidebar-slider-nav ul-slider-nav">
+                <button class="prev"><i class="flaticon-arrow"></i></button>
+                <button class="next"><i class="flaticon-right-arrow"></i></button>
+            </div>
+
+            <div class="slider-wrapper">
+                <div class="ul-sidebar-slider swiper">
+                    <div class="swiper-wrapper">
+                        <!-- single project -->
+                        <div class="swiper-slide">
+                            <div class="ul-project">
+                                <div class="ul-project-img"><img src="assets/img/Property/SiliconSan/2.png" alt="Project Image"></div>
+                                <div class="ul-project-txt">
+                                    <span class="ul-project-tag">Popular</span>
+                                    <div class="top">
+                                        <div class="left">
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                            <a href="6SiliconSan.html" class="ul-project-title">Silicon Sansaara</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
+                                        </div>
+                                        <div class="right">
+                                            <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- bottom -->
+                                    <div class="ul-project-infos ul-featured-property-infos">
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bed-color"></i></span>
+                                            <span class="text">3 Beds</span>
+                                        </div>
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bath"></i></span>
+                                            <span class="text">2 Bathrooms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single project -->
+                        <div class="swiper-slide">
+                            <div class="ul-project">
+                                <div class="ul-project-img"><img src="assets/img/Property/SMGhills/1.png" alt="Project Image"></div>
+                                <div class="ul-project-txt">
+                                    <span class="ul-project-tag">Popular</span>
+                                    <div class="top">
+                                        <div class="left">
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                           <a href="11SMGHILL.html" class="ul-project-title">SMG Hills</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
+                                        </div>
+                                        <div class="right">
+                                            <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- bottom -->
+                                    <div class="ul-project-infos ul-featured-property-infos">
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bed-color"></i></span>
+                                            <span class="text">3 Beds</span>
+                                        </div>
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bath"></i></span>
+                                            <span class="text">2 Bathrooms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- single project -->
+                        <div class="swiper-slide">
+                            <div class="ul-project">
+                                <div class="ul-project-img"><img src="assets/img/Property/calif/1.png" alt="Project Image"></div>
+                                <div class="ul-project-txt">
+                                    <span class="ul-project-tag">Popular</span>
+                                    <div class="top">
+                                        <div class="left">
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                             <a href="1CaliforneaCiti.html" class="ul-project-title">Californea Citi</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
+                                        </div>
+                                        <div class="right">
+                                            <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <!-- bottom -->
+                                    <div class="ul-project-infos ul-featured-property-infos">
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bed-color"></i></span>
+                                            <span class="text">3 Beds</span>
+                                        </div>
+                                        <!-- single info -->
+                                        <div class="ul-project-info ul-featured-property-info">
+                                            <span class="icon"><i class="flaticon-bath"></i></span>
+                                            <span class="text">2 Bathrooms</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- sidebar footer -->
+        <div class="ul-sidebar-footer">
+            <span class="ul-sidebar-footer-title">Follow us</span>
+
+            <div class="ul-sidebar-footer-social">
+                <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
+                <a href="#"><i class="flaticon-twitter"></i></a>
+                <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
+                <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+    <!-- SIDEBAR SECTION END -->
+
+    <!-- SEARCH MODAL SECTION START -->
+    <div class="ul-search-form-wrapper flex-grow-1 flex-shrink-0">
+        <button class="ul-search-closer"><i class="flaticon-close"></i></button>
+
+        <form action="#" class="ul-search-form">
+            <div class="ul-search-form-right">
+                <input type="search" name="search" id="ul-search" placeholder="Search Here">
+                <button type="submit"><span class="icon"><i class="flaticon-search"></i></span></button>
+            </div>
+        </form>
+    </div>
+    <!-- SEARCH MODAL SECTION END -->
+
+    <!-- HEADER SECTION START -->
+    <header class="ul-header">
+        <div class="ul-header-bottom">
+            <div class="ul-header-bottom-wrapper">
+                <!-- header left -->
+                <div class="header-bottom-left">
+                    <div class="logo-container">
+                        <a href="index.html" class="d-inline-block"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
+                    </div>
+                </div>
+
+                <!-- header nav -->
+                <div class="ul-header-nav-wrapper">
+                    <div class="to-go-to-sidebar-in-mobile">
+                        <nav class="ul-header-nav">
+                            <a href="index.html">Home</a>
+                            
+                            <div class="has-sub-menu">
+                                <a role="button">Property</a>
+
+                                 <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="projects.html">All Properties</a></li>
+                                        <li><a href="11SMGHILL.html"> SMG Hills</a></li>
+                                        <li><a href="6SiliconSan.html"> Silicon Sansaara</a></li>
+                                        <li><a href="1CaliforneaCiti.html"> Californea Citi</a></li>
+
+                                        <li><a href="10GolfGreens.html"> Golf Greens</a></li>
+                                        <li><a href="9GOLFLINK.html"> Golf Links</a></li>
+                                         <li><a href="8GolfManor.html"> Golf Manor</a></li>
+                                        
+                                        <li><a href="5ShivaShreeD.html"> Shiva Shree Dham</a></li>
+                                        
+                                        <li><a href="3MilanGreens.html"> Milan Greens</a></li>
+                                        <li><a href="4SampatGreens.html"> Sampat Greens</a></li>
+                                        <li><a href="7UrbanMeo.html"> Urban Meadows</a></li>
+                                        <li><a href="2ExoticAvenue.html"> Exotica Avenue</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <a href="emical.html">EMI Calculator</a>
+
+                            <div class="has-sub-menu">
+                                <a role="button">About</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="Timeline.html">Our Journey</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        
+                                        <li></li>
+                                        
+                                        
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="has-sub-menu">
+                                <a role="button">Resources</a>
+
+                                <div class="ul-header-submenu">
+                                    <ul>
+                                         
+                                        <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                                    
+                                        <li><a href="how-it-works.html">How It Works</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <a href="contact.html">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+
+               <!-- actions -->
+                <div class="ul-header-actions">
+                    <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
+                    <button class="ul-header-sidebar-opener"><i class="flaticon-menu-button"></i></button>
+                    
+                    <a href="projects.html" button class="ul-header-sidebar-opener"></button></a>
+                </div>
+
+                <!-- sidebar opener -->
+                <div class="d-none">
+                    <button class="ul-header-sidebar-opener"><i class="flaticon-menu-button"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+
+    <main>
+        <!-- BREADCRUMB SECTION START -->
+        <div class="ul-breadcrumb">
+            <div class="wow animate__fadeInUp">
+                <h2 class="ul-breadcrumb-title">Urban Meadows Indore</h2>
+                <div class="ul-breadcrumb-nav">
+                    <a href="index.html">Home</a>
+                    <span class="separator"><i class="flaticon-aro-left"></i></span>
+                    <span class="current-page">Urban Meadows</span>
+                </div>
+            </div>
+        </div>
+        <!-- BREADCRUMB SECTION END -->
+
+        <div class="ul-inner-page-content-wrapper">
+            <div class="ul-inner-page-container">
+                <!-- heading -->
+                <div class="ul-project-details-heading">
+                    <div class="left">
+                        <h3 class="ul-project-details-title">Urban Meadows</h3>
+                        <span class="ul-project-details-location"><span class="icon"><i class="flaticon-maps-and-flags"></i></span>Kanadia, Indore</span>
+                    </div>
+
+
+                    <!-- OTHER --
+                    <div class="right">
+                        <div class="ul-project-details-actions">
+                            <-- share --
+                            <button class="ul-project-details-action">
+                                <span class="icon"><i class="flaticon-heart"></i></span>
+                                <span>Save</span>
+                            </button>
+                            <-- share --
+                            <button class="ul-project-details-action">
+                                <span class="icon"><i class="flaticon-compare-2"></i></span>
+                                <span>Compare</span>
+                            </button>
+                            <-- share --
+                            <button class="ul-project-details-action">
+                                <span class="icon"><i class="flaticon-share-1"></i></span>
+                                <span>Share</span>
+                            </button>
+                        </div>
+
+                        <div class="ul-project-details-price"><span class="number">$500.00</span> Fixed</div>
+                    </div>
+<-- OTHER -->
+
+
+                </div>
+
+                <!-- body -->
+                <div class="ul-project-details-body">
+                    <div class="row gy-5">
+                        <!-- left -->
+                        <div class="col-lg-8">
+                            <!-- img slider -->
+                            <div class="ul-project-details-slider-wrapper wow animate__fadeInUp">
+                                <div class="swiper ul-project-details-img-slider">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/1.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/2.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/3.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/4.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/5.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/6.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/7.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/8.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/9.png" alt="Project Image">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper ul-project-details-img-slider-thumb">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/1.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/2.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/3.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/4.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/5.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/6.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/7.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/8.png" alt="Project Image">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="assets/img/Property/UrbanMeo/9.png" alt="Project Image">
+                                        </div>
+                                        
+                        
+                                    </div>
+
+                                    <!-- navigation -->
+                                    <div class="ul-slider-nav ul-project-details-img-slider-thumb-nav">
+                                        <button class="prev"><i class="flaticon-arrow"></i></button>
+                                        <button class="next"><i class="flaticon-right-arrow"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- description -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Description</h3>
+                                <p>Urban Meadows, located on Kanadia Road in Indore, is a completed and ready-to-move-in villa project by the Ashiyana Group.  It's positioned in the higher segment of the real estate market, offering a luxurious lifestyle within a well-developed community.  The project primarily features 3 and 4 BHK villas, designed to provide spacious and comfortable living.  These villas typically showcase modern architectural styles and thoughtful layouts, catering to families seeking ample living space.
+
+                                    A significant draw of Urban Meadows is the extensive range of amenities available to residents.  The project aims to create a self-contained living environment, where residents have access to various recreational, fitness, and social facilities.  These often include a clubhouse, serving as a central hub for community activities and gatherings.  A swimming pool and gymnasium cater to fitness and relaxation needs.  Landscaped gardens and play areas provide green spaces for leisure and children's activities.  Sports enthusiasts can often find facilities like tennis and badminton courts.  A banquet hall may also be available for hosting private events and celebrations.
+                                    
+                                    The Ashiyana Group, the developer behind Urban Meadows, is a recognized name in the real estate industry.  Their reputation for delivering quality projects often gives potential buyers confidence in the construction and overall development of the property.
+                                    
+                                    Urban Meadows' location on Kanadia Road places it in a well-connected part of Indore.  This location typically offers a balance between a quieter, more residential atmosphere and accessibility to essential city services and conveniences.
+                                    
+                                    Since the project is already completed, prospective buyers should directly inquire about available villas with the Ashiyana Group or through real estate listings.  Pricing for these villas reflects the project's premium offerings and the established nature of the community.  It's also important to inquire about ongoing maintenance charges and the upkeep of the amenities, as these contribute to the long-term cost of ownership.  Visiting the site is highly recommended to experience the environment firsthand and assess the quality of construction and amenities.  Checking online property portals can also provide insights into current listings and resale options.</p>
+                            </div>
+
+                            <!-- overview -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Overview</h3>
+                                <div class="ul-project-details-overview-infos wow animate__fadeInUp">
+                                    <div class="row row-cols-xl-5 row-cols-sm-4 row-cols-3 row-cols-xxs-2 ul-bs-row">
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-buildings"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">ID NO.</span>
+                                                    <span class="value">#1253</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-home-tik-mark"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Type</span>
+                                                    <span class="value">Apartment</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-bed-color"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Bedroom</span>
+                                                    <span class="value">4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-bath"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Bath</span>
+                                                    <span class="value">3</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-buildings"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Sqft</span>
+                                                    <span class="value">1950</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-house-1"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Purpose</span>
+                                                    <span class="value">For Sell</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-wifi"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Wi-Fi</span>
+                                                    <span class="value">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-tv-1"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Smart TV</span>
+                                                    <span class="value">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-parking"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Parking</span>
+                                                    <span class="value">Yes</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="ul-project-details-overview-info">
+                                                <div class="icon"><i class="flaticon-tools"></i></div>
+                                                <div class="txt">
+                                                    <span class="key">Build Year</span>
+                                                    <span class="value">2023</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- preview video -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Video Preview</h3>
+                                <div class="ul-project-details-video wow animate__fadeInUp">
+                                    <img src="assets/img/project-video-cover.jpg" alt="Video Cover" class="video-cover">
+                                    <a href="https://youtu.be/4jnzf1yj48M?si=tSUQuTCnqTSjrab8" data-fslightbox="video"><i class="flaticon-play"></i></a>
+                                </div>
+                            </div>
+
+                            <!-- Features & aminities -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Features & Aminities</h3>
+                                <div class="ul-project-details-features wow animate__fadeInUp">
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Air Conditioning</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Barbeque</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Washer and dryer</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Refrigerator</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Gym</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Recreation</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Ventilation</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Ventilation</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Microwave</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Microwave</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Electricity</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Front Yard</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Swimming Pool</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Basketball</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Window Coverings</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Heating</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Laundry</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Fireplace</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">24x7 Security</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Natural Gas</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Media Room</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Media Room</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Indoor Game</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Central Air</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Equipped Kitchen</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Suspendisse Potenti.</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Smoke Detectors</span></span>
+                                    <span class="feature"><span class="icon"><i class="flaticon-check-4"></i></span><span class="txt">Elevator</span></span>
+                                </div>
+                            </div>
+
+                            <!-- location -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Location</h3>
+                                <div class="ul-project-details-map wow animate__fadeInUp">
+                                   
+
+
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.7918817893233!2d75.9587738!3d22.7331204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962e391f81e59e7%3A0x14453c7c5082f658!2sThe%20Urban%20Meadows%20Kanadiya!5e1!3m2!1sen!2sin!4v1739179815672!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                            </div>
+
+                            <!-- floor plan -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Floor Plan</h3>
+
+                                <div class="ul-project-details-floor-plan wow animate__fadeInUp">
+                                    <div class="ul-project-details-floor-plan-img">
+                                        <img src="assets/img/Property/UrbanMeo/floor-plan.png" alt="Floor Plan Image" width="800px" 
+                                        height="350px">
+                                    </div>
+                                    <div class="row ul-bs-row">
+                                        <div class="col-md-5">
+                                            
+                                        </div>
+
+                                       
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- customer review -->
+                            <div class="ul-project-details-block wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Customer Review</h3>
+                                <div class="wow animate__fadeInUp">
+                                    <!-- single review -->
+                                    <div class="ul-project-details-review">
+                                        <!-- reviewer image -->
+                                        <div class="ul-project-details-review-reviewer-img">
+                                            <img src="assets/img/reviewer-img-1.jpg" alt="Reviewer Image">
+                                        </div>
+
+                                        <div class="ul-project-details-review-txt">
+                                            <div class="header">
+                                                <div class="left">
+                                                    <h4 class="reviewer-name">Leslie Alexander</h4>
+                                                    <h5 class="review-date">March 20, 2023 at 2:37 pm</h5>
+                                                </div>
+
+                                                <div class="right">
+                                                    <div class="rating">
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla. Integer non quam commodo, scelerisque felis id, eleifend turpis. Phasellus in nulla quis erat tempor tristique eget vel purus.</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- single review -->
+                                    <div class="ul-project-details-review">
+                                        <!-- reviewer image -->
+                                        <div class="ul-project-details-review-reviewer-img">
+                                            <img src="assets/img/reviewer-img-1.jpg" alt="Reviewer Image">
+                                        </div>
+
+                                        <div class="ul-project-details-review-txt">
+                                            <div class="header">
+                                                <div class="left">
+                                                    <h4 class="reviewer-name">Leslie Alexander</h4>
+                                                    <h5 class="review-date">March 20, 2023 at 2:37 pm</h5>
+                                                </div>
+
+                                                <div class="right">
+                                                    <div class="rating">
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                        <i class="flaticon-star"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>Phasellus eget fermentum mauris. Suspendisse nec dignissim nulla. Integer non quam commodo, scelerisque felis id, eleifend turpis. Phasellus in nulla quis erat tempor tristique eget vel purus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Add a review --
+                            <div class="ul-project-details-block ul-project-details-review-form-wrapper wow animate__fadeIn">
+                                <h3 class="ul-project-details-title">Add a Review</h3>
+                                <form class="ul-project-details-review-form wow animate__fadeInUp">
+                                    <div class="form-group rating-field-wrapper">
+                                        <span class="title">Your Rating:</span>
+                                        <div class="rating-field">
+                                            <button type="button"><i class="flaticon-star-1"></i></button>
+                                            <button type="button"><i class="flaticon-star-1"></i></button>
+                                            <button type="button"><i class="flaticon-star-1"></i></button>
+                                            <button type="button"><i class="flaticon-star-1"></i></button>
+                                            <button type="button"><i class="flaticon-star-1"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row row-cols-2 row-cols-xxs-1 ul-bs-row">
+                                        <div class="form-group">
+                                            <input type="text" name="review-name" id="review-name" placeholder="Your Name">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" name="review-email" id="review-email" placeholder="Your Email">
+                                        </div>
+
+                                        <div class="form-group col-12">
+                                            <div class="review-highlight-point">
+                                                <select name="highlight-point" id="highlight-point">
+                                                    <option value="1">Customer Support</option>
+                                                    <option value="2">Flexibility</option>
+                                                    <option value="3">Design Quality</option>
+                                                    <option value="4">Feature Availability</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group col-12">
+                                            <textarea name="review-message" id="review-message" placeholder="Your Review"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="ul-btn"><i class="flaticon-house-1"></i> Submit Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                             -- Add a review -->
+                        </div>
+
+                        <!-- right sidebar -->
+                        <div class="col-lg-4">
+                            <div class="ul-project-details-sidebar wow animate__fadeInUp">
+                                <h3 class="ul-project-details-sidebar-title">Download Brochure</h3>
+
+
+                                <center>
+
+
+                                <iframe src="https://prettyform.addxt.com/a/form/vf/1FAIpQLSe1TbnXXMmP_D64o1SBxkANXjyItPTm4UZqe9HqiBrIAAueAg" width="330" height="730" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+                                </center>
+
+
+                                
+
+                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- APP AD SECTION START -->
+        
+        <!-- APP AD SECTION END -->
+    </main>
+
+
+    <!-- FOOTER SECTION START -->
+    <footer class="ul-footer">
+        <div class="ul-footer-top">
+            <div class="ul-container">
+                <div class="ul-footer-top-wrapper wow animate__fadeInUp">
+                    <!-- <div class="row ul-bs-row"> -->
+                    <!-- <div class="col-4"> -->
+                    <div class="ul-footer-about">
+                        <a href="index.html"><img src="assets/img/logo-dark.png" alt="logo"></a>
+                        <p class="ul-footer-about-txt">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
+                        <div class="ul-footer-socials">
+                            <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
+                            <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
+                            <a href="#"><i class="flaticon-twitter"></i></a>
+                            <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+
+                    <!-- <div class="col-7"> -->
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">Properties</h3>
+
+                            <div class="ul-footer-widget-links">
+                                <a href="projects.html">All Properties</a>
+                                 <a href="11SMGHILL.html"> SMG Hills</a>   
+                                <a href="6SiliconSan.html"> Silicon Sansaara</a>    
+                                <a href="1CaliforneaCiti.html"> Californea Citi</a> 
+                                 
+                                 <a href="10GolfGreens.html"> Golf Greens</a> 
+                               <a href="9GOLFLINK.html"> Golf Links</a>  
+                                <a href="8GolfManor.html"> Golf Manor</a> 
+                                
+                                <a href="5ShivaShreeD.html"> Shiva Shree Dham</a> 
+                               
+                                <a href="3MilanGreens.html"> Milan Greens</a>    
+                                <a href="4SampatGreens.html"> Sampat Greens</a>   
+                                <a href="7UrbanMeo.html"> Urban Meadows</a> 
+                                <a href="2ExoticAvenue.html"> Exotica Avenue</a> 
+                                 
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">BUY, RENT AND SELL</h3>
+
+                             <div class="ul-footer-widget-links">
+                                <a href="projects.html">Buy Properties</a>
+                                <a href="projects.html">Rent Property</a>
+                                <a href="contact.html">Sell Property</a>
+                            </div>
+                            <br>
+                            <div class="ul-footer-widget">
+                                <h3 class="ul-footer-widget-title">RESOURCES</h3>
+    
+                                 <div class="ul-footer-widget-links">
+                                    
+                                     <a href="blog.html">Blog</a>
+                                    <a href="FAQ.html">FAQ</a>
+                                    <a href="how-it-works.html">How it works</a>
+                                    
+                                </div>
+                            </div>
+                            
+                            <h3 class="ul-footer-widget-title">ABOUT</h3>
+
+                            <div class="ul-footer-widget-links">
+                               <a href="about.html">Company</a>
+                                <a href="Timeline.html">Our Journey</a>
+                                <a href="services.html">Services</a>
+                                
+                                <a href="contact.html">Contact</a>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="single-column">
+                        <div class="ul-footer-widget">
+                            <h3 class="ul-footer-widget-title">LET'S CONNECT</h3>
+
+                            <div class="ul-footer-widget-links">
+                                
+                                    <a href="tel:+919301243543" class="ul-contact-info"><i class="flaticon-telephone"></i>  +91-93012-43543</a>
+                                    <a href="tel:+919399041688" class="ul-contact-info"><i class="flaticon-telephone"></i>  +91-93990-41688</a>
+                                    <a href="mailto:agrawalmakwana@gmail.com" class="ul-contact-info"><i class="flaticon-mail"></i>- agrawalmakwana@gmail.com</a>
+                                    
+                                    <a href="#"><i class="flaticon-location-pin"></i>  56, Kanadia Road,<br> Semliya Chau Rd, <br>opposite Garha Golf, <br>Indore, Madhya Pradesh <br>452016</a>
+                                       
+                                    
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                        
+                    </div>
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- footer bottom -->
+        <div class="ul-footer-bottom">
+            <p class="copyright-txt">&copy;2024 Property Samadhan. All rights reserved</p>
+        </div>
+
+        <!-- vector -->
+        <div class="ul-footer-vectors">
+            <img src="assets/img/footer-vector-img-1.png" alt="Footer Image" class="ul-footer-vector-1">
+            <img src="assets/img/footer-vector-img-2.png" alt="Footer Image" class="ul-footer-vector-2">
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+
+    <!-- libraries JS -->
+    <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/splide/splide.min.js"></script>
+    <script src="assets/vendor/splide/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/slim-select/slimselect.min.js"></script>
+    <script src="assets/vendor/animate-wow/wow.min.js"></script>
+    <script src="assets/vendor/splittype/index.min.js"></script>
+    <script src="assets/vendor/mixitup/mixitup.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <!-- custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/tab.js"></script>
+</body>
+
+</html>

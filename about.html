@@ -2,11 +2,62 @@
 <html lang="en">
 
 
-<!-- Mirrored from realestics.temptics.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jan 2025 11:29:08 GMT -->
-<head>
+    <style>
+        /* Use a more specific class name */
+        .floating-whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-size: 16px;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; /* Added background-color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .floating-whatsapp-button:hover {
+            transform: scale(1.1);
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+            background-color: #1DA851;
+        }
+
+        /* More specific class for the icon */
+        .floating-whatsapp-button .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            fill: white;
+        }
+
+        .floating-whatsapp-button .whatsapp-text {  /* More specific for the text */
+            font-weight: bold;
+        }
+    </style>
+<body>
+
+    <a class="floating-whatsapp-button" href="https://wa.me/+919301243543" target="_blank">
+        <svg class="whatsapp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <path d="M28.27 25.86c-.29-.69-1.1-1.26-1.9-1.45-.8-.19-1.7-.3-2.5-.32-.81-.02-1.57.12-2.38.42-.81.3-.96.82-.96 1.62 0 .8.16 1.58.47 2.38.31.8.78 1.57 1.47 2.13.7.56 1.5.92 2.38 1.06.88.14 1.76.21 2.64.21.9 0 1.7-.14 2.5-.42.8-.28 1.4-.74 1.9-1.32.5-.58.89-1.28 1.17-2.06.27-.78.4-1.6.4-2.42 0-.82-.13-1.64-.4-2.46zM22.12 7.52c-3.18 0-6.16 1.27-8.48 3.6-2.32 2.32-3.59 5.3-3.59 8.48 0 1.52.3 2.98.8 4.35l-.38 1.38 1.45-.38c1.37.5 2.83.8 4.35.8 3.18 0 6.16-1.27 8.48-3.6 2.32-2.32 3.59-5.3 3.59-8.48 0-3.18-1.27-6.16-3.6-8.48-2.32-2.32-5.3-3.59-8.48-3.59z"></path>
+        </svg>
+        <span class="whatsapp-text">WhatsApp</span>
+    </a>
+
+</body>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realestics - Real Estate HTML Template</title>
+    <title>Property Samadhan</title>
+
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-icon-180x180.png">
 
     <!-- libraries CSS -->
     <link rel="stylesheet" href="assets/icon/flaticon_real_estate.css">
@@ -31,8 +82,8 @@
         <!-- header -->
         <div class="ul-sidebar-header">
             <div class="ul-sidebar-header-logo">
-                <a href="index-2.html">
-                    <img src="assets/img/logo-dark.svg" alt="logo" class="logo">
+                <a href="index.html">
+                    <img src="assets/img/logo-dark.png" alt="logo" class="logo">
                 </a>
             </div>
             <!-- sidebar closer -->
@@ -41,7 +92,7 @@
 
         <div class="ul-sidebar-header-nav-wrapper d-block d-lg-none"></div>
 
-        <p class="ul-sidebar-descr d-none d-lg-flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo magni quis illum iste, omnis sapiente, voluptatum tempora id culpa exercitationem sint sequi officia labore inventore corporis consequuntur dolor numquam, ea cupiditate ipsa dignissimos nostrum. Laboriosam voluptatem qui assumenda nostrum nesciunt, illum iste id nulla unde facilis, explicabo officia. Quae, officia.</p>
+        <p class="ul-sidebar-descr d-none d-lg-flex">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
 
         <div class="ul-sidebar-slider-wrapper d-none d-lg-flex">
             <div class="ul-sidebar-slider-nav ul-slider-nav">
@@ -55,14 +106,14 @@
                         <!-- single project -->
                         <div class="swiper-slide">
                             <div class="ul-project">
-                                <div class="ul-project-img"><img src="assets/img/project-3.jpg" alt="Project Image"></div>
+                                <div class="ul-project-img"><img src="assets/img/Property/SiliconSan/2.png" alt="Project Image"></div>
                                 <div class="ul-project-txt">
                                     <span class="ul-project-tag">Popular</span>
                                     <div class="top">
                                         <div class="left">
-                                            <span class="ul-project-price"><span class="number">$4,500</span>/Month</span>
-                                            <a href="project-details.html" class="ul-project-title">Faulkner Ave</a>
-                                            <p class="ul-project-location">2821 Lake Sevilla, Palm Harbor, TX</p>
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                            <a href="6SiliconSan.html" class="ul-project-title">Silicon Sansaara</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
                                         </div>
                                         <div class="right">
                                             <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
@@ -89,14 +140,14 @@
                         <!-- single project -->
                         <div class="swiper-slide">
                             <div class="ul-project">
-                                <div class="ul-project-img"><img src="assets/img/project-1.jpg" alt="Project Image"></div>
+                                <div class="ul-project-img"><img src="assets/img/Property/SMGhills/1.png" alt="Project Image"></div>
                                 <div class="ul-project-txt">
                                     <span class="ul-project-tag">Popular</span>
                                     <div class="top">
                                         <div class="left">
-                                            <span class="ul-project-price"><span class="number">$4,500</span>/Month</span>
-                                            <a href="project-details.html" class="ul-project-title">Palm Harbor</a>
-                                            <p class="ul-project-location">2821 Lake Sevilla, Palm Harbor, TX</p>
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                           <a href="11SMGHILL.html" class="ul-project-title">SMG Hills</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
                                         </div>
                                         <div class="right">
                                             <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
@@ -123,14 +174,14 @@
                         <!-- single project -->
                         <div class="swiper-slide">
                             <div class="ul-project">
-                                <div class="ul-project-img"><img src="assets/img/project-4.jpg" alt="Project Image"></div>
+                                <div class="ul-project-img"><img src="assets/img/Property/calif/1.png" alt="Project Image"></div>
                                 <div class="ul-project-txt">
                                     <span class="ul-project-tag">Popular</span>
                                     <div class="top">
                                         <div class="left">
-                                            <span class="ul-project-price"><span class="number">$4,500</span>/Month</span>
-                                            <a href="project-details.html" class="ul-project-title">St. Crystal</a>
-                                            <p class="ul-project-location">2821 Lake Sevilla, Palm Harbor, TX</p>
+                                            <!--span class="ul-project-price"><span class="number">$4,500</span>/Month</span-->
+                                             <a href="1CaliforneaCiti.html" class="ul-project-title">Californea Citi</a>
+                                            <p class="ul-project-location">Kanadia Road, Indore</p>
                                         </div>
                                         <div class="right">
                                             <button class="ul-project-add-to-favorites-btn"><i class="flaticon-heart"></i></button>
@@ -163,10 +214,10 @@
             <span class="ul-sidebar-footer-title">Follow us</span>
 
             <div class="ul-sidebar-footer-social">
-                <a href="#"><i class="flaticon-facebook"></i></a>
+                <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
                 <a href="#"><i class="flaticon-twitter"></i></a>
-                <a href="#"><i class="flaticon-instagram"></i></a>
-                <a href="#"><i class="flaticon-linkedin"></i></a>
+                <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
+                <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
             </div>
         </div>
     </div>
@@ -192,7 +243,7 @@
                 <!-- header left -->
                 <div class="header-bottom-left">
                     <div class="logo-container">
-                        <a href="index-2.html" class="d-inline-block"><img src="assets/img/logo.svg" alt="logo" class="logo"></a>
+                        <a href="index.html" class="d-inline-block"><img src="assets/img/logo.png" alt="logo" class="logo"></a>
                     </div>
                 </div>
 
@@ -200,41 +251,62 @@
                 <div class="ul-header-nav-wrapper">
                     <div class="to-go-to-sidebar-in-mobile">
                         <nav class="ul-header-nav">
-                            <a href="index-2.html">Home</a>
+                            <a href="index.html">Home</a>
                             <a href="about.html">About</a>
                             <div class="has-sub-menu">
                                 <a role="button">Property</a>
 
-                                <div class="ul-header-submenu">
+                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="projects.html">Properties</a></li>
-                                        <li><a href="project-details.html">Property Details</a></li>
+                                        <li><a href="projects.html">All Properties</a></li>
+                                        <li><a href="11SMGHILL.html"> SMG Hills</a></li>
+                                        <li><a href="6SiliconSan.html"> Silicon Sansaara</a></li>
+                                        <li><a href="1CaliforneaCiti.html"> Californea Citi</a></li>
+
+                                        <li><a href="10GolfGreens.html"> Golf Greens</a></li>
+                                        <li><a href="9GOLFLINK.html"> Golf Links</a></li>
+                                         <li><a href="8GolfManor.html"> Golf Manor</a></li>
+                                        
+                                        <li><a href="5ShivaShreeD.html"> Shiva Shree Dham</a></li>
+                                        
+                                        <li><a href="3MilanGreens.html"> Milan Greens</a></li>
+                                        <li><a href="4SampatGreens.html"> Sampat Greens</a></li>
+                                        <li><a href="7UrbanMeo.html"> Urban Meadows</a></li>
+                                        <li><a href="2ExoticAvenue.html"> Exotica Avenue</a></li>
+
                                     </ul>
                                 </div>
                             </div>
 
+                            <a href="emical.html">EMI Calculator</a>
+
                             <div class="has-sub-menu">
-                                <a role="button">Pages</a>
+                                <a role="button">About</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="Timeline.html">Our Journey</a></li>
                                         <li><a href="services.html">Services</a></li>
-                                        <li><a href="service-details.html">Service Details</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="team-details.html">Team Details</a></li>
-                                        <li><a href="how-it-works.html">How it works Page</a></li>
-                                        <li><a href="pricing.html">Pricing Page</a></li>
+                                        
+                                        <li></li>
+                                        
+                                        
+                                        
                                     </ul>
                                 </div>
                             </div>
                             <div class="has-sub-menu">
-                                <a role="button">Blog</a>
+                                <a role="button">Resources</a>
 
                                 <div class="ul-header-submenu">
                                     <ul>
-                                        <li><a href="blog.html">Blogs</a></li>
-                                        <li><a href="blog-2.html">Blog layout 2</a></li>
-                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                         
+                                        <li><a href="blog.html">Blog</a></li>
+                                    <li><a href="FAQ.html">FAQ</a></li>
+                                    
+                                        <li><a href="how-it-works.html">How It Works</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -243,12 +315,12 @@
                     </div>
                 </div>
 
-                <!-- actions -->
+               <!-- actions -->
                 <div class="ul-header-actions">
                     <button class="ul-header-search-opener"><i class="flaticon-search"></i></button>
-                    <button><i class="flaticon-user"></i></button>
-                    <a href="#" class="add-property-btn d-xxs-none"><i class="flaticon-home"></i> Add Property</a>
                     <button class="ul-header-sidebar-opener"><i class="flaticon-menu-button"></i></button>
+                    
+                    <a href="projects.html" button class="ul-header-sidebar-opener"></button></a>
                 </div>
 
                 <!-- sidebar opener -->
@@ -267,7 +339,7 @@
             <div class="wow animate__fadeInUp">
                 <h2 class="ul-breadcrumb-title">About us</h2>
                 <div class="ul-breadcrumb-nav">
-                    <a href="index-2.html">Home</a>
+                    <a href="index.html">Home</a>
                     <span class="separator"><i class="flaticon-aro-left"></i></span>
                     <span class="current-page">About us</span>
                 </div>
@@ -285,7 +357,7 @@
                             <div class="ul-why-choose-us-imgs">
                                 <div class="img"><img src="assets/img/why-choose-img-1.jpg" alt="image"></div>
                                 <div class="img">
-                                    <img src="assets/img/why-choose-img-2.jpg" alt="image">
+                                    <img src="assets/img/why-choose-img-2.png" alt="image">
                                     <!-- icon -->
                                     <div class="icon"><i class="flaticon-home-agreement"></i></div>
                                 </div>
@@ -304,24 +376,27 @@
                                     <div class="ul-why-choose-us-list-item">
                                         <div class="icon"><i class="flaticon-property"></i></div>
                                         <div class="txt">
-                                            <h3 class="ul-why-choose-us-list-item-title">Property Management</h3>
-                                            <p class="ul-why-choose-us-list-item-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis adipisci quas facere a!</p>
+                                            <h3 class="ul-why-choose-us-list-item-title">Who We Are</h3>
+                                            <p class="ul-why-choose-us-list-item-descr">"Property Samadhan by Agrawal & Makwana Realtors is a real estate consultancy firm with three generations of industry expertise, offering trusted guidance for all property needs. With in-depth market knowledge, we ensure that our clients make informed and profitable real estate decisions."</p>
                                         </div>
                                     </div>
 
                                     <div class="ul-why-choose-us-list-item">
                                         <div class="icon"><i class="flaticon-list-1"></i></div>
                                         <div class="txt">
-                                            <h3 class="ul-why-choose-us-list-item-title">Mortgage Services</h3>
-                                            <p class="ul-why-choose-us-list-item-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis adipisci quas facere a!</p>
+                                            <h3 class="ul-why-choose-us-list-item-title">Our Legacy & Expertise</h3>
+                                            <p class="ul-why-choose-us-list-item-descr">• Timeline or infographic showcasing 40+ years of experience, <br>
+                                                • A section on the team and their experience</p>
                                         </div>
                                     </div>
 
                                     <div class="ul-why-choose-us-list-item">
                                         <div class="icon"><i class="flaticon-change"></i></div>
                                         <div class="txt">
-                                            <h3 class="ul-why-choose-us-list-item-title">Financing made easy</h3>
-                                            <p class="ul-why-choose-us-list-item-descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis adipisci quas facere a!</p>
+                                            <h3 class="ul-why-choose-us-list-item-title">Our Values</h3>
+                                            <p class="ul-why-choose-us-list-item-descr">• Integrity: Transparent dealings and ethical business practices,<br>
+                                                • Customer Satisfaction: Personalized service for every client,<br>
+                                                • Market Expertise: Helping clients make the best real estate decisions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -382,27 +457,27 @@
                             <div class="ul-about-txt ul-inner-about-txt">
                                 <h2 class="ul-section-title">Welcome To Properties</h2>
                                 <div>
-                                    <p>It is a long established fact that a reader will be distracted the readable content of a page when looking at layout the point of using lorem the is Ipsum less normal distribution of letters.
+                                    <p>Property Samadhan by Agrawal & Makwana Realtors is a trusted name in real estate, backed by three generations of expertise and a cumulative experience of over 40 years. We specialize in providing comprehensive real estate solutions, including buying, selling, and investment opportunities. With deep insights into the ever-evolving property market, we guide our clients towards the best real estate decisions with transparency and trust. Whether you are looking for a dream home, a profitable investment, or expert consultation, Property Samadhan ensures that all your property needs are met with professionalism and efficiency
                                     </p>
                                     <p>
-                                        Tempus tristique. Sed quis lacinia elit aliquam erat volutpat mauris orci mauris varius et diam at scelerisque euismod sapien nunc sit amet elementum sem vestibulum lobortis fermentum lacus. 
+                                        "To provide expert real estate guidance with integrity, experience, and personalized service, ensuring that every client makes informed and profitable property decisions. With Property Samadhan, your real estate solutions are always at your fingertips."
                                     </p>
                                 </div>
 
                                 <div class="ul-about-txt-bottom ul-inner-about-txt-bottom">
                                     <ul class="ul-inner-about-list">
-                                        <li><i class="flaticon-read-more-icon"></i> Proactively pontificate client</li>
-                                        <li><i class="flaticon-read-more-icon"></i> Is there a waiting list for desired </li>
-                                        <li><i class="flaticon-read-more-icon"></i> Immediate 24/ 7 Emergency</li>
+                                        <li><i class="flaticon-read-more-icon"></i> Affordable</li>
+                                        <li><i class="flaticon-read-more-icon"></i> Easy </li>
+                                        <li><i class="flaticon-read-more-icon"></i> On Your fingertips</li>
                                     </ul>
 
                                     <div class="ul-about-stats ul-inner-about-stats">
                                         <div class="ul-about-stat ul-inner-about-stat">
-                                            <span class="number">30k+</span>
+                                            <span class="number">100%</span>
                                             <span class="txt">Satisficed Client</span>
                                         </div>
                                         <div class="ul-about-stat ul-inner-about-stat">
-                                            <span class="number">700+</span>
+                                            <span class="number">5000+</span>
                                             <span class="txt">House</span>
                                         </div>
                                     </div>
@@ -412,7 +487,7 @@
 
                         <!-- img -->
                         <div class="col">
-                            <div class="ul-about-img ul-inner-about-img"><img src="assets/img/about-img.jpg" alt="About Image"></div>
+                            <div class="ul-about-img ul-inner-about-img"><img src="assets/img/logo.png" alt="About Image" width="295" height="250"></div>
                         </div>
                     </div>
                 </div>
@@ -597,7 +672,7 @@
                                     <p class="ul-inner-testimony-descr">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p>
                                     <div class="ul-inner-testimony-bottom">
                                         <div class="ul-inner-testimony-reviewer">
-                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-2.png" alt="reviewer image"></div>
+                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-1.jpg" alt="reviewer image"></div>
                                             <div>
                                                 <h3 class="reviewer-name">Esther Howard</h3>
                                                 <span class="reviewer-role">Web Designer</span>
@@ -623,7 +698,7 @@
                                     <p class="ul-inner-testimony-descr">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p>
                                     <div class="ul-inner-testimony-bottom">
                                         <div class="ul-inner-testimony-reviewer">
-                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-3.png" alt="reviewer image"></div>
+                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-1.jpg" alt="reviewer image"></div>
                                             <div>
                                                 <h3 class="reviewer-name">Esther Howard</h3>
                                                 <span class="reviewer-role">Web Designer</span>
@@ -649,7 +724,7 @@
                                     <p class="ul-inner-testimony-descr">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p>
                                     <div class="ul-inner-testimony-bottom">
                                         <div class="ul-inner-testimony-reviewer">
-                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-1.png" alt="reviewer image"></div>
+                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-1.jpg" alt="reviewer image"></div>
                                             <div>
                                                 <h3 class="reviewer-name">Esther Howard</h3>
                                                 <span class="reviewer-role">Web Designer</span>
@@ -675,7 +750,7 @@
                                     <p class="ul-inner-testimony-descr">Praesent ut lacus a velit tincidunt aliquam a eget urna. Sed ullamcorper tristique nisl at pharetra turpis accumsan et etiam eu sollicitudin eros. In imperdiet accumsan.</p>
                                     <div class="ul-inner-testimony-bottom">
                                         <div class="ul-inner-testimony-reviewer">
-                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-2.png" alt="reviewer image"></div>
+                                            <div class="reviewer-image"><img src="assets/img/reviewer-img-1.jpg" alt="reviewer image"></div>
                                             <div>
                                                 <h3 class="reviewer-name">Esther Howard</h3>
                                                 <span class="reviewer-role">Web Designer</span>
@@ -701,12 +776,12 @@
             <!-- TESTIMONIAL SECTION END -->
 
 
-            <!-- FEATURES SECTION START -->
+            <!-- FEATURES SECTION START --
             <section class="ul-features ul-section-spacing">
                 <div class="ul-inner-page-container">
                     <div class="ul-features-content wow animate__fadeInUp">
                         <div class="row ul-bs-row">
-                            <!-- section heading -->
+                            <-- section heading --
                             <div class="col-lg-3">
                                 <div class="ul-section-heading ul-features-heading">
                                     <div>
@@ -715,16 +790,16 @@
                                         <a href="#" class="ul-features-heading-btn ul-btn">Add Properties</a>
                                     </div>
 
-                                    <!-- vector -->
+                                    <-- vector --
                                     <img src="assets/img/features-vector.svg" alt="vector" class="vector wow animate__fadeInLeft">
                                 </div>
                             </div>
 
-                            <!-- features -->
+                            <-- features --
                             <div class="col-lg-9">
                                 <div class="ul-features-slider swiper">
                                     <div class="swiper-wrapper">
-                                        <!-- single feature -->
+                                        <-- single feature --
                                         <div class="swiper-slide">
                                             <div class="ul-feature">
                                                 <div class="ul-feature-icon"><i class="flaticon-buildings"></i></div>
@@ -735,7 +810,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- single feature -->
+                                        <-- single feature --
                                         <div class="swiper-slide">
                                             <div class="ul-feature">
                                                 <div class="ul-feature-icon"><i class="flaticon-building"></i></div>
@@ -746,7 +821,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- single feature -->
+                                        <-- single feature --
                                         <div class="swiper-slide">
                                             <div class="ul-feature">
                                                 <div class="ul-feature-icon"><i class="flaticon-house-1"></i></div>
@@ -757,7 +832,7 @@
                                             </div>
                                         </div>
 
-                                        <!-- single feature -->
+                                        <-- single feature --
                                         <div class="swiper-slide">
                                             <div class="ul-feature">
                                                 <div class="ul-feature-icon"><i class="flaticon-building"></i></div>
@@ -780,60 +855,10 @@
                     </div>
                 </div>
             </section>
-            <!-- FEATURES SECTION END -->
+            <-- FEATURES SECTION END -->
 
 
-            <!-- APP AD SECTION START -->
-            <div class="ul-app-ad wow animate__fadeInUp">
-                <div class="ul-app-ad-container">
-                    <div class="ul-app-ad-content">
-                        <div class="row align-items-start gy-5">
-                            <!-- txt -->
-                            <div class="col-lg-7">
-                                <div class="ul-app-ad-txt">
-                                    <span class="ul-section-sub-title">Download App</span>
-                                    <h2 class="ul-section-title">Download Our Real Estate Mobile App <span class="colored">15% Off</span></h2>
-                                    <div class="ul-app-ad-btns">
-                                        <button>
-                                            <i class="flaticon-play"></i>
-                                            <span>
-                                                <span class="sub-title">Get in on</span>
-                                                <span class="title">Apps Store</span>
-                                            </span>
-                                        </button>
-                                        <button>
-                                            <i class="flaticon-play"></i>
-                                            <span>
-                                                <span class="sub-title">Get in on</span>
-                                                <span class="title">Google Play</span>
-                                            </span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- img -->
-                            <div class="col-lg-5">
-                                <div class="ul-app-ad-imgs">
-                                    <div class="ul-app-ad-img">
-                                        <!-- qr code -->
-                                        <img src="assets/img/app-ad-qr-code.jpg" alt="QR Code" class="ul-app-ad-qr-code">
-                                        <!-- app screenshot 1 -->
-                                        <img src="assets/img/app-ad-ss-1.png" alt="App screenshot" class="ul-app-ad-ss-1">
-                                    </div>
-                                    <div class="ul-app-ad-img">
-                                        <!-- app screenshot 2 -->
-                                        <img src="assets/img/app-ad-ss-2.png" alt="App Screenshot" class="ul-app-ad-ss-2">
-                                    </div>
-
-                                    <!-- vector -->
-                                    <img src="assets/img/app-ad-img-vector.svg" alt="vector" class="vector">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <!-- APP AD SECTION END -->
         </div>
     </main>
@@ -847,13 +872,13 @@
                     <!-- <div class="row ul-bs-row"> -->
                     <!-- <div class="col-4"> -->
                     <div class="ul-footer-about">
-                        <a href="index-2.html"><img src="assets/img/logo-dark.svg" alt="logo"></a>
-                        <p class="ul-footer-about-txt">over 1 million+ homes for sale available on the website, we can match you with a house you will want to call home.</p>
+                        <a href="index.html"><img src="assets/img/logo-dark.png" alt="logo"></a>
+                        <p class="ul-footer-about-txt">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
                         <div class="ul-footer-socials">
-                            <a href="#"><i class="flaticon-facebook"></i></a>
-                            <a href="#"><i class="flaticon-instagram"></i></a>
+                            <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
+                            <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
                             <a href="#"><i class="flaticon-twitter"></i></a>
-                            <a href="#"><i class="flaticon-linkedin"></i></a>
+                            <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
                         </div>
                     </div>
                     <!-- </div> -->
@@ -861,65 +886,84 @@
                     <!-- <div class="col-7"> -->
                     <div class="single-column">
                         <div class="ul-footer-widget">
-                            <h3 class="ul-footer-widget-title">SELL A HOME</h3>
+                            <h3 class="ul-footer-widget-title">Properties</h3>
 
                             <div class="ul-footer-widget-links">
-                                <a href="#">Request an offer</a>
-                                <a href="pricing.html">Pricing</a>
-                                <a href="#">Reviews</a>
-                                <a href="#">Stories</a>
+                                <a href="projects.html">All Properties</a>
+                                 <a href="11SMGHILL.html"> SMG Hills</a>   
+                                <a href="6SiliconSan.html"> Silicon Sansaara</a>    
+                                <a href="1CaliforneaCiti.html"> Californea Citi</a> 
+                                 
+                                 <a href="10GolfGreens.html"> Golf Greens</a> 
+                               <a href="9GOLFLINK.html"> Golf Links</a>  
+                                <a href="8GolfManor.html"> Golf Manor</a> 
+                                
+                                <a href="5ShivaShreeD.html"> Shiva Shree Dham</a> 
+                               
+                                <a href="3MilanGreens.html"> Milan Greens</a>    
+                                <a href="4SampatGreens.html"> Sampat Greens</a>   
+                                <a href="7UrbanMeo.html"> Urban Meadows</a> 
+                                <a href="2ExoticAvenue.html"> Exotica Avenue</a> 
+                                 
                             </div>
                         </div>
-                        <div class="ul-footer-widget">
-                            <h3 class="ul-footer-widget-title">BUY A HOME</h3>
-
-                            <div class="ul-footer-widget-links">
-                                <a href="pricing.html">Buy</a>
-                                <a href="#">Finance</a>
-                            </div>
-                        </div>
+                        
                     </div>
                     <div class="single-column">
                         <div class="ul-footer-widget">
                             <h3 class="ul-footer-widget-title">BUY, RENT AND SELL</h3>
 
-                            <div class="ul-footer-widget-links">
-                                <a href="#">Buy and sell properties</a>
-                                <a href="#">Rent home</a>
-                                <a href="#">Builder trade-up</a>
+                             <div class="ul-footer-widget-links">
+                                <a href="projects.html">Buy Properties</a>
+                                <a href="projects.html">Rent Property</a>
+                                <a href="contact.html">Sell Property</a>
                             </div>
-                        </div>
-                        <div class="ul-footer-widget">
-                            <h3 class="ul-footer-widget-title">TERMS & PRIVACY</h3>
-
-                            <div class="ul-footer-widget-links">
-                                <a href="#">Trust & Safety</a>
-                                <a href="#">Terms of Service</a>
-                                <a href="#">Privacy Policy</a>
+                            <br>
+                            <div class="ul-footer-widget">
+                                <h3 class="ul-footer-widget-title">RESOURCES</h3>
+    
+                                 <div class="ul-footer-widget-links">
+                                    
+                                     <a href="blog.html">Blog</a>
+                                    <a href="FAQ.html">FAQ</a>
+                                    <a href="how-it-works.html">How it works</a>
+                                    
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="single-column">
-                        <div class="ul-footer-widget">
+                            
                             <h3 class="ul-footer-widget-title">ABOUT</h3>
 
                             <div class="ul-footer-widget-links">
-                                <a href="#">Company</a>
-                                <a href="how-it-works.html">How it works</a>
+                               <a href="about.html">Company</a>
+                                <a href="Timeline.html">Our Journey</a>
+                                <a href="services.html">Services</a>
+                                
                                 <a href="contact.html">Contact</a>
-                                <a href="#">Investors</a>
+                                
                             </div>
+                            
                         </div>
+                        
+                    </div>
+                    <div class="single-column">
                         <div class="ul-footer-widget">
-                            <h3 class="ul-footer-widget-title">RESOURCES</h3>
+                            <h3 class="ul-footer-widget-title">LET'S CONNECT</h3>
 
                             <div class="ul-footer-widget-links">
-                                <a href="blog.html">Blog</a>
-                                <a href="#">Guide</a>
-                                <a href="#">FAQ</a>
-                                <a href="#">Help Center</a>
-                            </div>
+                                
+                                    <a href="tel:+919301243543" class="ul-contact-info"><i class="flaticon-telephone"></i>  +91-93012-43543</a>
+                                    <a href="tel:+919399041688" class="ul-contact-info"><i class="flaticon-telephone"></i>  +91-93990-41688</a>
+                                    <a href="mailto:agrawalmakwana@gmail.com" class="ul-contact-info"><i class="flaticon-mail"></i>- agrawalmakwana@gmail.com</a>
+                                    
+                                    <a href="#"><i class="flaticon-location-pin"></i>  56, Kanadia Road,<br> Semliya Chau Rd, <br>opposite Garha Golf, <br>Indore, Madhya Pradesh <br>452016</a>
+                                       
+                                    
+                                </div>
+                            
                         </div>
+                        
+                    </div>
+                        
                     </div>
                     <!-- </div> -->
                     <!-- </div> -->
@@ -929,7 +973,7 @@
 
         <!-- footer bottom -->
         <div class="ul-footer-bottom">
-            <p class="copyright-txt">&copy;2024 Realestics. All rights reserved</p>
+            <p class="copyright-txt">&copy;2024 Property Samadhan. All rights reserved</p>
         </div>
 
         <!-- vector -->
@@ -956,6 +1000,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 
-
-<!-- Mirrored from realestics.temptics.com/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 31 Jan 2025 11:29:12 GMT -->
 </html>

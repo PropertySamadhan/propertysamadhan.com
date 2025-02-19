@@ -337,145 +337,122 @@
         <!-- BREADCRUMB SECTION START -->
         <div class="ul-breadcrumb">
             <div class="wow animate__fadeInUp">
-                <h2 class="ul-breadcrumb-title">Services</h2>
+                <h2 class="ul-breadcrumb-title">EMI Calculator</h2>
                 <div class="ul-breadcrumb-nav">
                     <a href="index.html">Home</a>
                     <span class="separator"><i class="flaticon-aro-left"></i></span>
-                    <span class="current-page">Services</span>
+                    <span class="current-page">EMI Calculator</span>
                 </div>
             </div>
         </div>
         <!-- BREADCRUMB SECTION END -->
 
-        <div class="ul-inner-page-content-wrapper">
-            <!-- SPECIALITY SECTION START -->
-            <section class="ul-specialities overflow-hidden">
-                <div class="ul-specialities-heading-card wow animate__fadeInUp">
-                    <div class="txt">
-                        <h3 class="ul-specialities-title">The new way to find your new home</h3>
-                        <p class="ul-specialities-descr">Find your dream place to live in with more than 10k+ properties listed.</p>
-                        <a href="projects.html" class="ul-btn">Browse Properties</a>
-                    </div>
 
-                    <div class="img"><img src="assets/img/logo-dark.png" alt="Image"></div>
-                </div>
+        <!-- PRICING section START -->
+        <section class="ul-pricing ul-section-spacing">
+            <div class="ul-inner-page-container">
+                <div class="row ul-bs-row">
+                    <!-- text -->
+                   
+    <style>
+        .calculator-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #4CAF50;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .calculator-header {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .calculator-input {
+            margin-bottom: 15px;
+        }
+        .calculator-input label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .calculator-input input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .calculator-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .calculator-button:hover {
+            background-color: #45a049;
+        }
+        .calculator-result {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+            font-size: 1.2em;
+        }
+    </style>
 
-                <div class="ul-specialities-wrapper">
-                    <!-- single speciality -->
-                    <div class="ul-speciality wow animate__fadeInUp">
-                        <div class="ul-speciality-icon">
-                            <img src="assets/icon/speciality-1-icon-1.svg" alt="icon">
-                            <div class="sm-icon"><img src="assets/icon/speciality-1-icon-2.svg" alt="icon"></div>
-                        </div>
-                        <h4 class="ul-speciality-title">Property Insurance</h4>
-                        <p class="ul-speciality-descr">We offer our customer property protection of liability coverage and insurance for their better life.</p>
-                    </div>
+<body>
 
-                    <!-- single speciality -->
-                    <div class="ul-speciality wow animate__fadeInUp">
-                        <div class="ul-speciality-icon">
-                            <img src="assets/icon/speciality-2-icon-1.svg" alt="icon">
-                            <div class="sm-icon"><img src="assets/icon/speciality-2-icon-2.svg" alt="icon"></div>
-                        </div>
-                        <h4 class="ul-speciality-title">Best Price</h4>
-                        <p class="ul-speciality-descr">Not sure what you should be charging for your property? No need to worry, let us do the numbers for you.</p>
-                    </div>
+<div class="calculator-container">
+    <div class="calculator-header">Home Loan Calculator</div>
+    <div class="calculator-input">
+        <label for="loanAmount">Loan Amount:</label>
+        <input id="loanAmount" placeholder="Enter loan amount" type="number" />
+    </div>
+    <div class="calculator-input">
+        <label for="interestRate">Annual Interest Rate (%):</label>
+        <input id="interestRate" placeholder="Enter interest rate" type="number" />
+    </div>
+    <div class="calculator-input">
+        <label for="loanTerm">Loan Term (years):</label>
+        <input id="loanTerm" placeholder="Enter loan term" type="number" />
+    </div>
+    <button class="calculator-button" onclick="calculateLoan()">Calculate</button>
+    <div class="calculator-result" id="result"></div>
+</div>
 
-                    <!-- single speciality -->
-                    <div class="ul-speciality wow animate__fadeInUp">
-                        <div class="ul-speciality-icon">
-                            <img src="assets/icon/speciality-3-icon-1.svg" alt="icon">
-                            <div class="sm-icon"><img src="assets/icon/speciality-3-icon-2.svg" alt="icon"></div>
-                        </div>
-                        <h4 class="ul-speciality-title">Lowest Commission</h4>
-                        <p class="ul-speciality-descr">You no longer have to negotiate commissions and haggle with other agents.</p>
-                    </div>
+<script>
+    function calculateLoan() {
+        const loanAmount = parseFloat(document.getElementById('loanAmount').value);
+        const interestRate = parseFloat(document.getElementById('interestRate').value) / 100 / 12;
+        const loanTerm = parseFloat(document.getElementById('loanTerm').value) * 12;
 
-                    <!-- single speciality -->
-                    <div class="ul-speciality wow animate__fadeInUp">
-                        <div class="ul-speciality-icon">
-                            <img src="assets/icon/speciality-4-icon-1.svg" alt="icon">
-                            <div class="sm-icon"><img src="assets/icon/speciality-4-icon-2.svg" alt="icon"></div>
-                        </div>
-                        <h4 class="ul-speciality-title">Overall Control</h4>
-                        <p class="ul-speciality-descr">Get a virtual tour, and schedule visits before you rent or buy any properties. You get overall control.</p>
-                    </div>
-                </div>
-            </section>
-            <!-- SPECIALITY SECTION END -->
+        if (isNaN(loanAmount) || isNaN(interestRate) || isNaN(loanTerm)) {
+            document.getElementById('result').textContent = 'Please enter valid values.';
+            return;
+        }
+
+        const x = Math.pow(1 + interestRate, loanTerm);
+        const monthlyPayment = (loanAmount * x * interestRate) / (x - 1);
+        document.getElementById('result').textContent = `Monthly Payment: ${monthlyPayment.toFixed(2)}`;
+    }
+</script>
+
+</body>
 
 
-            <!-- STATS SECTION START -->
-            <div class="ul-stats ul-section-spacing">
-                <!-- <div class="ul-container"> -->
-                <div class="ul-stats-wrapper wow animate__fadeInUp">
-                    <div class="ul-stats-item">
-                        <i class="flaticon-excavator"></i>
-                        <span class="number">260+</span>
-                        <span class="txt">Total Construction</span>
-                    </div>
-                    <div class="ul-stats-item">
-                        <i class="flaticon-interior-design"></i>
-                        <span class="number">110+</span>
-                        <span class="txt">Apartio Rooms</span>
-                    </div>
-                    <div class="ul-stats-item">
-                        <i class="flaticon-buildings"></i>
-                        <span class="number">190+</span>
-                        <span class="txt">Apartments Sold</span>
-                    </div>
-                    <div class="ul-stats-item">
-                        <i class="flaticon-map"></i>
-                        <span class="number">560+</span>
-                        <span class="txt">Total Area Sq</span>
-                    </div>
-                </div>
-                <!-- </div> -->
-            </div>
-            <!-- STATS SECTION END -->
 
+                   
+                             
+                                  
 
-            <!-- SERVICE SECTION START -->
-            <div class="ul-services ul-section-spacing">
-                <div class="ul-inner-page-container">
-                    <h2 class="ul-section-title">Core Services</h2>
+                               
 
-                    <!-- serices grid -->
-                    <div class="row ul-bs-row row-cols-md-3 row-cols-2 row-cols-xxs-1">
-                        <!-- single service -->
-                        <div class="col">
-                            <div class="ul-service">
-                                <div class="ul-service-icon"><i class="flaticon-button-aero"></i></div>
-                                <a href="service-details.html" class="ul-service-title">Buy a Property</a>
-                                <p class="ul-service-descr">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
-                                <a href="service-details.html" class="ul-service-btn">Find a Home <i class="flaticon-aro-left"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- single service -->
-                        <div class="col">
-                            <div class="ul-service">
-                                <div class="ul-service-icon"><i class="flaticon-right-aro"></i></div>
-                                <a href="service-details.html" class="ul-service-title">Rent a Property</a>
-                                <p class="ul-service-descr">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
-                                <a href="service-details.html" class="ul-service-btn">Find a Home <i class="flaticon-aro-left"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- single service -->
-                        <div class="col">
-                            <div class="ul-service">
-                                <div class="ul-service-icon"><i class="flaticon-buildings"></i></div>
-                                <a href="service-details.html" class="ul-service-title">Sell a Property</a>
-                                <p class="ul-service-descr">Property Samadhan BY Agrawal & Makwana Realtors. Agrawal & Makwana Realtors 40 Years of Excellence in Real Estate Expert Guidance, Seamless Experience.</p>
-                                <a href="service-details.html" class="ul-service-btn">Properties <i class="flaticon-aro-left"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- SERVICE SECTION END -->
-        </div>
 
 
 
