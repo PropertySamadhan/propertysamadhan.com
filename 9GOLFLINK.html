@@ -2,53 +2,32 @@
 <html lang="en">
 
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
-        /* Use a more specific class name */
-        .floating-whatsapp-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #25D366;
-            color: white;
-            padding: 15px 20px;
-            border-radius: 50px;
-            font-size: 16px;
-            text-decoration: none;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease; /* Added background-color */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1000;
+        .float{
+            position:fixed;
+            width:60px;
+            height:60px;
+            bottom:40px;
+            right:40px;
+            background-color:#25d366;
+            color:#FFF;
+            border-radius:50px;
+            text-align:center;
+            font-size:30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index:100;
         }
 
-        .floating-whatsapp-button:hover {
-            transform: scale(1.1);
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
-            background-color: #1DA851;
-        }
-
-        /* More specific class for the icon */
-        .floating-whatsapp-button .whatsapp-icon {
-            width: 24px;
-            height: 24px;
-            margin-right: 10px;
-            fill: white;
-        }
-
-        .floating-whatsapp-button .whatsapp-text {  /* More specific for the text */
-            font-weight: bold;
+        .my-float{
+            margin-top:16px;
         }
     </style>
+</head>
 <body>
-
-    <a class="floating-whatsapp-button" href="https://wa.me/+919301243543" target="_blank">
-        <svg class="whatsapp-icon" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-            <path d="M28.27 25.86c-.29-.69-1.1-1.26-1.9-1.45-.8-.19-1.7-.3-2.5-.32-.81-.02-1.57.12-2.38.42-.81.3-.96.82-.96 1.62 0 .8.16 1.58.47 2.38.31.8.78 1.57 1.47 2.13.7.56 1.5.92 2.38 1.06.88.14 1.76.21 2.64.21.9 0 1.7-.14 2.5-.42.8-.28 1.4-.74 1.9-1.32.5-.58.89-1.28 1.17-2.06.27-.78.4-1.6.4-2.42 0-.82-.13-1.64-.4-2.46zM22.12 7.52c-3.18 0-6.16 1.27-8.48 3.6-2.32 2.32-3.59 5.3-3.59 8.48 0 1.52.3 2.98.8 4.35l-.38 1.38 1.45-.38c1.37.5 2.83.8 4.35.8 3.18 0 6.16-1.27 8.48-3.6 2.32-2.32 3.59-5.3 3.59-8.48 0-3.18-1.27-6.16-3.6-8.48-2.32-2.32-5.3-3.59-8.48-3.59z"></path>
-        </svg>
-        <span class="whatsapp-text">WhatsApp</span>
+    <a href="https://wa.me/+919301243543" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
     </a>
-
 </body>
 
     <meta charset="UTF-8">
@@ -217,7 +196,7 @@
                 <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
                 <a href="#"><i class="flaticon-twitter"></i></a>
                 <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
-                <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
+                <a href="http://wa.me/+919893477776"><i class="fa fa-whatsapp"></i></a>
             </div>
         </div>
     </div>
@@ -499,7 +478,8 @@
                                                 <div class="icon"><i class="flaticon-buildings"></i></div>
                                                 <div class="txt">
                                                     <span class="key">RERA #</span>
-                                                    <span class="value">#1253</span>
+                                                    <span class="value">P-IND-22-3591
+                                                    </span>
                                                 </div>
                                             </div>
                                         </div>
@@ -898,7 +878,7 @@
                             <a href="https://www.facebook.com/people/Agrawal-Makwana-Realtors/61569409523977"><i class="flaticon-facebook"></i></a>
                             <a href="https://www.instagram.com/agrawal.makwana/"><i class="flaticon-instagram"></i></a>
                             <a href="#"><i class="flaticon-twitter"></i></a>
-                            <a href="http://wa.me/+919893477776"><i class="flaticon-linkedin"></i></a>
+                            <a href="http://wa.me/+919893477776"><i class="fa fa-whatsapp"></i></a>
                         </div>
                     </div>
                     <!-- </div> -->
